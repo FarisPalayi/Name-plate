@@ -137,9 +137,6 @@ ul {
   text-align: center;
 }
 
-.main {
-}
-
 .tab-links {
   display: flex;
   align-items: center;
@@ -166,8 +163,11 @@ ul {
   border-bottom: 2px solid #a0a5ef;
 }
 
+.tab-content, .author-bio {
+  padding: 2rem 1rem;
+}
+
 .tab-content {
-  padding: 2rem 0;
   display: none;
 }
 
@@ -175,8 +175,7 @@ ul {
   display: block;
 }
 
-.tab-content p {
-  padding: 0 1rem;
+.tab-content p, .author-bio p {
   font-size: 1rem;
   line-height: 2;
   margin-bottom: 0.7rem;
