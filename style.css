@@ -80,9 +80,8 @@ select {
   font-weight: 400;
   font-size: 100%;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #213547;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -123,13 +122,6 @@ ul {
   list-style: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-}
-
 /* ---------------------------------------------- */
 
 .header {
@@ -154,6 +146,7 @@ ul {
   width: 100%;
   border: none;
   padding: 1rem 0;
+  border-bottom: 2px solid transparent;
 }
 
 .tab-button.active {
@@ -169,12 +162,6 @@ ul {
   display: block;
 }
 
-/* utility */
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
+.tab-content p {
+  padding: 0 1rem;
 }
