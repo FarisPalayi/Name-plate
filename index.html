@@ -8,8 +8,34 @@
   </head>
   <body>
     <div id="app">
-      <h1>नेम प्लेट</h1>
-      <a href="/about">About</a>
+      <header class="header">
+        <h1>नेम प्लेट</h1>
+      </header>
+      <main class="main">
+        <ul class="tab-links">
+          <li class="tab-link"><button class="tab-button active" data-tab="english">English</button></li>
+          <li class="tab-link"><button class="tab-button" data-tab="hindi">Hindi</button></li>
+          <li class="tab-link"><button class="tab-button" data-tab="malayalam">Malayalam</button></li>
+        </ul>
+
+        <article class="tab-content active" data-content="english">
+          <h1>English</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aspernatur nobis, ratione cupiditate amet odio iusto ea maiores temporibus voluptas.</p>
+        </article>
+
+        <article class="tab-content" data-content ="hindi">
+          <h1>Hindi</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aspernatur nobis, ratione cupiditate amet odio iusto ea maiores temporibus voluptas.</p>
+        </article>
+
+        <article class="tab-content" data-content ="malayalam" hidden>
+          <h1>Malayalam</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aspernatur nobis, ratione cupiditate amet odio iusto ea maiores temporibus voluptas.</p>
+        </article>
+      </main>
+      <footer class="footer">
+        <a href="/about">About</a>
+      </footer>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
