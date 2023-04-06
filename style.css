@@ -114,8 +114,10 @@ a:hover {
 h1 {
   font-size: 2.2em;
   line-height: 1.1;
-  padding: 0.5em 0;
+  padding-top: 2.1rem;
   text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #646cff;
 }
 
 ul {
