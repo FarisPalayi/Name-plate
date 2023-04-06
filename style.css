@@ -60,7 +60,7 @@ select {
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
   *,
   *::before,
@@ -80,9 +80,8 @@ select {
   font-weight: 400;
   font-size: 100%;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #213547;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -93,13 +92,14 @@ select {
 
 body {
   margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 #app {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
   max-width: 1280px;
-  text-align: center;
+  min-height: 100vh;
 }
 
 a {
@@ -114,7 +114,8 @@ a:hover {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  padding: .5em 0;
+  padding: 0.5em 0;
+  text-align: center;
 }
 
 ul {
@@ -123,27 +124,26 @@ ul {
   list-style: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-}
-
 /* ---------------------------------------------- */
 
 .header {
-  background-color: #646cff;
+  padding: 1rem 0;
+  box-shadow: 0 0 11px 1px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .main {
-  background-color: snow;
-  padding: 2rem 0;
 }
 
 .tab-links {
   display: flex;
   align-items: center;
+  padding-top: 0.4rem;
 }
 
 .tab-link {
@@ -154,6 +154,8 @@ ul {
   width: 100%;
   border: none;
   padding: 1rem 0;
+  border-bottom: 2px solid transparent;
+  background-color: transparent;
 }
 
 .tab-button.active {
@@ -169,12 +171,15 @@ ul {
   display: block;
 }
 
-/* utility */
-
-.hide {
-  display: none;
+.tab-content p {
+  padding: 0 1rem;
+  font-size: 1rem;
+  line-height: 2;
 }
 
-.show {
-  display: block;
+.footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
 }
