@@ -150,7 +150,7 @@ ul {
   padding: 1.4rem 0 1rem 0;
   border-bottom: 2px solid transparent;
   background-color: transparent;
-  transition: ease-out 0.2s;
+  transition: ease-out 0.3s;
 }
 
 .tab-button.active {
